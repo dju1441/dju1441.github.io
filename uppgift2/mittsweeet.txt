@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
+	<meta content="width=device-width, initial-scale=1" name="viewport">
+	<meta content="a webpage" name="description">
+	<meta content="made by me" name="author">
+	
+
+	
+<figure>
+	
+	<img alt="logga" title="sweeet" src="sweeetmini.png">
+	
+</figure>
+<header>
+<div id="navbar">
+  
+  <a href="#Sortiment">Sortiment</a>
+  <a href="#Webbshop">Webbshop</a>
+  <a href="#Nytt hos oss">Nytt hos oss</a>
+  <a href="#Kontakt">Kontakt</a>
+  <a href="#,,,,,">Hitta butik</a>
+</div>
+</header>
+
+<header>
+<img alt="godis" title="godis" src="godis.png">
+<img alt="godis" title="godis" src="godishylla.png">
+</header>
+
+
+
+</head>
+<body>
+
+<div class="header">
+  <h2>Välkommen till Malmös största plockgodisbutik</h2>
+ </div>
+ 
+
+
+
+<script>
+window.onscroll = function() {myFunction()};
+
+var navbar = document.getElementById("navbar");
+var sticky = navbar.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset >= sticky) {
+    navbar.classList.add("sticky")
+  } else {
+    navbar.classList.remove("sticky");
+  }
+}
+</script>
+
+
+
+
+
+	<title>Sweeet</title>
+	
+	<!-- CSS -->
+	<link href="main.css" rel="stylesheet">
+</head>
+
+<body class="backgroundImage">
+	<nav>
+		<ul>
+			<li>
+				<a href="index.html">Välkommen</a>
+			</li>
+
+
+			<li>
+				<a href="menu.html" >Nyheter</a>
+			</li>
+
+
+			<li>
+				<a href="#footer">Kontakt</a>
+			</li>
+		</ul>
+	</nav>
+
+
+	<article>
+		<header>
+			<h1>Luncherbjudande</h1>
+			<h3>Måndag till Fredag, 10.00-13.00</h3>
+
+			<p>Dagens pizza inklusive sallad och läsk</p>
+			<h4>80:-</h4>
+			
+		</header>
+
+
+			</article>
+
+
+	<section>
+		<h2>Mer än bara godis</h2>
+		<p><a href="menu.html">Klicka här för att se våra andra rätter.</a></p>
+
+	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam gravida lacinia massa nec lacinia. Donec in velit vitae ex condimentum condimentum vitae vel nunc. Donec diam sapien, maximus ut erat non, placerat volutpat nunc. Cras et lorem ornare, laoreet justo nec, fringilla elit. In elementum justo eu elit faucibus viverra. Praesent placerat risus turpis, pharetra malesuada neque maximus sit amet. Nunc fringilla nulla sit amet augue hendrerit, rhoncus imperdiet libero convallis. Aenean ac posuere lacus, non finibus arcu.</p>
+		<p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Morbi a eros eu sem euismod gravida ut at ligula. Nam pretium ultricies tincidunt. Integer varius urna sed tortor auctor, non molestie sem tristique. Etiam lobortis dictum libero, quis sollicitudin velit dapibus nec. Pellentesque ultrices pulvinar pulvinar. Pellentesque egestas velit sed eros fringilla tempus. Maecenas vitae diam molestie, porttitor erat ac, efficitur quam. Donec semper ligula magna, rhoncus cursus urna convallis vel. Curabitur blandit velit nec est convallis, id vulputate nunc ullamcorper. Curabitur rutrum quam non pellentesque aliquet. Nunc eget nisl id sem accumsan faucibus vitae at lacus. Fusce fringilla urna quis nulla porta, fringilla tempus elit lacinia. Vestibulum varius posuere augue et tempus. Suspendisse ultrices bibendum sagittis. In at vulputate felis.</p>
+		<p>Maecenas iaculis, libero vel sagittis lobortis, leo mi bibendum ante, a tincidunt justo arcu pharetra tortor. Vestibulum tristique malesuada porta. Pellentesque ligula nulla, facilisis vel justo non, sagittis auctor risus. Quisque aliquam tempus massa vel pellentesque. Proin et consequat libero. Cras non nisl vitae nunc laoreet varius. Duis fermentum luctus orci et pulvinar. Lorem ipsum dolor sit amet, consectetur</p>
+			
+		
+
+	</section>
+
+
+	<footer id="footer">
+	<ul>
+					<li>
+						<h3>Kontakt</h3>
+					</li>
+					<li>Adress:  Nobelvägen 36</li>
+					<li>Tel: 040-121045</li>
+				</ul>
+
+				<ul>
+					<li>
+						<h3>Öppettider</h3>
+					</li>
+					<li>Mån-Tors 10.00-23.00 </li>
+					<li>Fre 10.00-00.00</li>
+					<li>Lör 10.00-00.00</li>
+					<li>Sön 11.00-23.00</li>
+					
+				</ul>
+	</footer>
+</body>
+</html>
