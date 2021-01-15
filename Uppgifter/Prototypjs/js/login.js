@@ -50,7 +50,7 @@ function checkPass() {
 
 function makeCookie() {
 	
-	document.cookie = "username=" + formName;
+	document.cookie = "username=Anna Star";
 	
 	console.log("make cookie");
 	
