@@ -26,12 +26,16 @@ var searchParams = new URLSearchParams(currentURL.search);
 
 // there is a few features that URLSearchParams has that is usefull
 // the main one is "get", that lets us fetch form data based on the form name
-let fname = searchParams.get("inputEmail");
+//let fname = searchParams.get("inputEmail");
 // when we print this we will see what was enterd in the form with the name "fname"
-console.log(fname);
+
+let cookie =document.cookie;
+
+let cookieValue=cookie.split("=")[1];
+console.log(cookieValue);
 
 // lets show it on the page
-document.getElementById("inputEmail").innerHTML = fname;
+document.getElementById("formName").innerHTML = cookieValue;
 
 
 	
