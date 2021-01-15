@@ -1,45 +1,47 @@
+
+// Här tar man sig vidare om man fyller in lösenordet admin 
 let passSave = "admin";
 
-
+// 3 försök 
 let passCount = 1;
 let passMax = 3;
 
-// this is what is called from the onsubmit
+// från onsubmit
 function checkPass() {
 
-	// lets get what ever is in the form for password
+	
+	// här hämtar vi både form namnet och namnet i imputen det som är i form för lösenord
 	let passWord = document.forms["formName"]["password"].value;
-	// note that we need both the forms name and the name of the input tha we want to get
+	
 
-	//first check if the user is below the max number of changes
+	//kontroll om vi är under 3 försök
 	if (passCount <= passMax) {
 
-		// Check if the passWord is  not correct
+		// kontroll om lösenordet inte är rätt
 		if (passWord != passSave) {
 			console.log(passCount);
-			// make a var to hold the number of attempts left
+			// en var för att ha koll på antalet försök
 			var attemptsLeft = 4 - passCount;
 
-			//inform the user of how its going for them
+			//meddela hur många gånger man försök
 			document.getElementById("passStatus").innerHTML = "Du har " + attemptsLeft + " försök kvar";
 
-			// update the count for each failed password check
+			// uppdatera räckningen för varje gång det är fel lösenord 
 			passCount++;
 
-			// then return false, so that the submit action wont run
+			// retunera falsk så att submit action inte körs 
 			return false;
 		} else {
-			// if there is something in the password, return true so the submit action happends
+			//Om nått finns i lösenordet , retunera sant så att submit action händer 
 			
 			document.cookie = "username="+document.forms["formName"]["inputEmail"].value;
 			return true;
 		}
 
 	} else {
-		// if the user is above the max changes for the password check they are locked out
-		//inform the user of how its going for them
+		// Info med hur det går för en
 		document.getElementById("passStatus").innerHTML = "Försök igen";
-		// and also make it red
+		
 		document.getElementById("passStatus").style.color = "tomato";
 		return false;
 
@@ -47,15 +49,11 @@ function checkPass() {
 }
 
 function makeCookie() {
-	// this is how you make a cookie
-	// its a way to save strings in for a "site"
-	document.cookie = "username=";
-	// 
-	//	By default, the cookie is deleted when the browser is closed
-	// 	add the expires tag with a date to set how long the cookie show last
+	
+	document.cookie = "username=" + formName;
+	
 	console.log("make cookie");
-	//when you make a cookie it will stay there for that site, refreshing the page normally wont remove it.
-	// read more here: https://www.w3schools.com/js/js_cookies.asp
+	
 }
 
 
