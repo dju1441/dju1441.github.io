@@ -1,17 +1,17 @@
 // This is a way to get the address of what site this code is running from
-let currentAddress = window.location.href;
-console.log(currentAddress);
+//let currentAddress = window.location.href;
+//console.log(currentAddress);
 // it will be just string
 
 // now, we know that we want the address or the URL (Uniform Resource Locator) as it is called
 // and there is a way to get the URL with some extra features
-let currentURL = new URL(window.location.href);
+//let currentURL = new URL(window.location.href);
 
 // printing it will show us the extra stuff
-console.log(currentURL);
+//console.log(currentURL);
 
 // one of the extras is "search"
-console.log(currentURL.search);
+//console.log(currentURL.search);
 // this will cut off everything before the ? mark
 
 // now we have the info from the form, lets get the info into a useable format
@@ -19,7 +19,7 @@ console.log(currentURL.search);
 // URLSearchParams is a way to get form data like this
 // its called HTTP GET method
 // URLSearchParams let us get this data in a easy way.
-var searchParams = new URLSearchParams(currentURL.search);
+///var searchParams = new URLSearchParams(currentURL.search);
 
 //https://developer.mozilla.org/en-US/docs/Web/API/URLSearchParams
 
@@ -29,7 +29,7 @@ var searchParams = new URLSearchParams(currentURL.search);
 //let fname = searchParams.get("inputEmail");
 // when we print this we will see what was enterd in the form with the name "fname"
 
-let cookie =document.cookie;
+let cookie = document.cookie;
 
 let cookieValue=cookie.split("=")[1];
 console.log(cookieValue);
