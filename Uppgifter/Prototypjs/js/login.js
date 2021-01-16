@@ -50,9 +50,9 @@ function checkPass() {
 
 function makeCookie() {
 	
-	document.cookie = "username=Anna Star";
+	document.cookie = ("username=Anna Star"); // "inputEmail" ?
 	
-	console.log("make cookie");
+	console.log("cookie made"); 
 	
 }
 
