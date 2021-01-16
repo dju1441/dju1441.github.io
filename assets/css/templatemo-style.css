@@ -329,6 +329,7 @@ html {
     letter-spacing: 0.5px;
     text-transform: uppercase;
     transition: all 0.5s;
+	margin-bottom: 20px;
 }
 
 .white-button a:hover {
